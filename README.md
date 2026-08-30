@@ -1,22 +1,54 @@
-# TalkGPT
+# 🎙️ TalkGPT - Voice-Enabled ChatGPT Assistant
 
-## 📌 Description
-Welcome to **TalkGPT**! This project is part of the curated software workspace.
+> **Hands-free Python voice assistant integrating SpeechRecognition, OpenAI GPT models, and pyttsx3 text-to-speech audio synthesis.**
+
+---
+
+## ✨ Features
+
+- 🎙️ **Voice Speech Recognition**
+  - Captures spoken voice input via system microphone using Google Speech Recognition (`SpeechRecognition`).
+- 🧠 **OpenAI GPT Intelligence**
+  - Connects to OpenAI API (`gpt-3.5-turbo` / `gpt-4o`) with automatic retry and quota handling.
+- 🔊 **Text-To-Speech (TTS) Voice Feedback**
+  - Synthesizes spoken audio responses using offline `pyttsx3` text-to-speech engine.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language**: Python 3.10+
+- **Voice / Audio**: `SpeechRecognition`, `pyttsx3`, `PyAudio`
+- **AI Gateway**: OpenAI Python SDK, `python-dotenv`
+
+---
 
 ## 🚀 Getting Started
 
-### Prerequisites
-Ensure you have the required runtime environment installed for this project:
-- **Node.js** (if applicable for web/frontend components)
-- **Python 3.10+** (if applicable for AI/voice scripts)
-- **Java JDK 17+** (if applicable for Java applications)
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Omkar4812x/TalkGPT.git
+   cd TalkGPT
+   ```
 
-### Installation & Execution
-1. Clone this repository to your local machine.
-2. Install dependencies:
-   - For Node.js projects: `npm install`
-   - For Python projects: `pip install -r requirements.txt` (or create a venv: `python -m venv venv`)
-3. Launch the application entry point.
+2. **Install dependencies**:
+   ```bash
+   pip install openai speechrecognition pyttsx3 pyaudio python-dotenv
+   ```
 
-## 📄 License & Attribution
-Created and maintained as part of the Tech Hub projects collection.
+3. **Set your OpenAI API Key**:
+   Create a `.env` file in the root directory:
+   ```env
+   OPENAI_API_KEY=your_openai_api_key_here
+   ```
+
+4. **Run Assistant**:
+   ```bash
+   python TalkGPT.py
+   ```
+
+---
+
+## 📄 License
+
+Distributed under the MIT License.
